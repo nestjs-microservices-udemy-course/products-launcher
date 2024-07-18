@@ -4,18 +4,13 @@
 2. Create the .env based on the .env.example
 3. Execute the command `docker compose up --build`
 
-### Pasos para crear los Git Submodules
+### Steps to create Git Submodules
 
-1. Crear un nuevo repositorio en GitHub
-2. Clonar el repositorio en la máquina local
-3. Añadir el submodule, donde `repository_url` es la url del repositorio y `directory_name` es el nombre de la carpeta donde quieres que se guarde el sub-módulo (no debe de existir en el proyecto)
-
-```
-git submodule add <repository_url> <directory_name>
-```
-
-4. Añadir los cambios al repositorio (git add, git commit, git push)
-   Ej:
+1. Create a new repository on GitHub
+2. Clone the repository on the local machine
+3. Add the submodule, where `repository_url` is the repository url and `directory_name` is the name of the folder where you want to save the submodule (it must not exist in the project)
+4. Add the changes to the repository (git add, git commit, git push)
+   Ex:
 
 ```
 git add .
@@ -23,20 +18,20 @@ git commit -m "Add submodule"
 git push
 ```
 
-5. Inicializar y actualizar Sub-módulos, cuando alguien clona el repositorio por primera vez, debe de ejecutar el siguiente comando para inicializar y actualizar los sub-módulos
+5. Initialize and update Submodules, when someone clones the repository for the first time, they must run the following command to initialize and update the submodules
 
 ```
 git submodule update --init --recursive
 ```
 
-6. Para actualizar las referencias de los sub-módulos
+6. To update the sub-module references
 
 ```
 git submodule update --remote
 ```
 
-## Importante
+## Important!
 
-Si se trabaja en el repositorio que tiene los sub-módulos, **primero actualizar y hacer push** en el sub-módulo y **después** en el repositorio principal.
+If you are working on the repository that has the submodules, **first update and push** in the submodule and **then** in the main repository.
 
-Si se hace al revés, se perderán las referencias de los sub-módulos en el repositorio principal y tendremos que resolver conflictos.
+If you do it the other way around, you will lose the references of the submodules in the main repository and you will have to resolve conflicts.
