@@ -9,6 +9,11 @@
 1. Create a new repository on GitHub
 2. Clone the repository on the local machine
 3. Add the submodule, where `repository_url` is the repository url and `directory_name` is the name of the folder where you want to save the submodule (it must not exist in the project)
+
+```
+git submodule add <repository_url> <directory_name>
+```
+
 4. Add the changes to the repository (git add, git commit, git push)
    Ex:
 
