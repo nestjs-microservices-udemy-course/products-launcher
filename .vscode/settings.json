@@ -4,5 +4,5 @@
     "editor.formatOnSave": "explicit",
     "source.fixAll.eslint": "explicit"
   },
-  "cSpell.words": ["NATS", "Pino"]
+  "cSpell.words": ["colorette", "NATS", "Pino"]
 }
