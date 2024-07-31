@@ -65,3 +65,4 @@ services:
     environment:
       - PORT=4004
       - NATS_SERVERS=nats://nats-server:4222
+      - DATABASE_URL=${AUTH_DATABASE_URL}
