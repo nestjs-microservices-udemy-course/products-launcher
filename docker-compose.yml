@@ -66,3 +66,5 @@ services:
       - PORT=4004
       - NATS_SERVERS=nats://nats-server:4222
       - DATABASE_URL=${AUTH_DATABASE_URL}
+      - JWT_SECRET=${AUTH_JWT_SECRET}
+      - JWT_EXPIRES_IN=${AUTH_JWT_EXPIRES_IN}
